@@ -32,6 +32,35 @@
             </div>
         </div>
     </div>
+    <div class="card-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">DATA</th>
+                                <th scope="col">DESCRIÇÃO</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            include 'conecta.php';
+                            $pesquisa = mysqli_query($mysqli, "SELECT * FROM sugestao");
+                            $row = mysqli_num_rows($pesquisa);
+                            if ($row > 0) {
+                                while ($registro = $pesquisa->fetch_array()) {
+                                    $id = $registro['id'];
+                                    echo "<tr>";
+                                    echo "<td>" . $registro['id'] . "</td>";
+                                    echo "<td>" . $registro['data1'] . "</td>";
+                                    echo "<td>" . $registro['descricao'] . "</td>";
+                                }
+                            } else {
+                                echo "Não existem sugestões cadastradas!";
+                            }
+                            ?>
+                        </tbody>
+                    </table>
+                </div>
     <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
