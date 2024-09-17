@@ -9,11 +9,11 @@
         echo "<b> | </b>";
         echo "<a href='emitirsugest.php' style='color: black; text-decoration: none'>SUGESTÃO</a>";
         echo "<b> | </b>";
-        echo "<a href='concluirata.php' style='color: black; text-decoration: none'>CONCLUIR ATA</a>";
+        /*echo "<a href='concluirata.php' style='color: black; text-decoration: none'>CONCLUIR ATA</a>";
         echo "<b> | </b>";
         echo "<a href='consultarata.php' style='color: black; text-decoration: none'>CONSULTAR ATA</a>";
         echo "<b> | </b>";
-        echo "<a href='relatorios.php' style='color: black; text-decoration: none'>RELATORÍOS</a>";
+        echo "<a href='relatorios.php' style='color: black; text-decoration: none'>RELATORÍOS</a>";*/
     //}
     /*else {
         echo "<a href='emitirsugest.php' style='color: black; text-decoration: none'>SUGESTÃO</a>";
